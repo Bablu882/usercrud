@@ -1,0 +1,18 @@
+{% extends 'operation/base.html' %}
+
+{% block content %}
+<div class="col">
+    <div class="col-sm-8 offset-2">
+        <h1 class="alert alert-info">Update Information</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{frm.as_p}}
+            <input type="submit" class="btn btn-success" value="Update">
+            <a href="{% url 'addshow' %}" class="btn btn-danger"> Back to Home</a>
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Show</title>
+    <link rel="stylesheet" href="{% static 'operation/css/bootstrap.css' %}">
+</head>
+<body>
+
+    <div class="containor mt-5">
+        <h1 class="text-center alert alert-danger">User Crud Operations</h1>
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <script src="{% static 'operation/js/bootstrap.js' %}"></script>
+    <script src="{% static 'operation/js/jquery.js' %}"></script>
+    <script src="{% static 'operation/js/popper.js' %}"></script>
+</body>
+</html>
